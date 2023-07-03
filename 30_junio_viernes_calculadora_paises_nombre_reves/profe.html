@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Elige tu pais y ciudad</h1>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae facere aspernatur, nisi sit tempora praesentium optio quidem fugiat soluta. Vero voluptatum repudiandae earum in. Molestiae voluptates voluptas quasi voluptatum id?
+    </p>
+    <form name="formulario">
+        <select name="pais" id="pais" onchange="Mostrar_Ciudad()">
+            <option value="0">Selecciona un pais...</option>
+            <option value="1">Argentina</option>
+            <option value="2">Bolivia</option>
+            <option value="3">Colombia</option>
+            <option value="4">Dinamarca</option>
+        </select>
+        <select name="ciudades" id="ciudades">
+            <option value="-">-</option>
+        </select>
+    </form>
+    <h2>Calculadora</h2>
+    <form action="">
+        <input type="text" placeholder="Ingrese el primer número" id="numero1">
+        <select name="" id="operaciones">
+            <option value="0">Seleccione la operacion</option>
+            <option value=1>Sumar</option>
+            <option value=2>Restar</option>
+            <option value=3>Multiplicar</option>
+            <option value=4>Dividir</option>
+        </select>
+        <input type="text" name="" id="numero2" placeholder="Ingrese el segundo número">
+        <button type="button" onclick="Calculadora()">Calcular</button>
+        <p id="resultado"></p>
+    </form>
+
+    <input type="text" name="" id="texto" placeholder="Ingresa un texto">
+    <button type="button" onclick="Invertir()">Invertir texto</button>
+    <p id="otroTexto"></p>
+    <script>
+        function Invertir()
+        {
+            let texto=document.getElementById('texto').value;
+            let letras= texto.split("").reverse("").join("")
+            //split (hola: h,o,l,a)
+            //reverse (a,l,o,h)
+            //join aloh
+            document.getElementById('otroTexto').innerHTML=letras
+        }
+    </script>
+
+    <script src="js/cambia_pais.js"></script>
+</body>
+</html>

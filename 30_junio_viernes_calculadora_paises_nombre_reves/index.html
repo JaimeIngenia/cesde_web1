@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+  </head>
+  <body>
+    <h1>Elige tu país y ciudad</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas neque
+      aperiam aut magnam minus quisquam ratione unde ab perferendis iste
+      inventore, laboriosam corrupti sequi velit, quia odio fugiat in voluptate.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+      recusandae quam veniam harum dicta delectus reiciendis vero! Voluptas
+      assumenda blanditiis veritatis distinctio deserunt, adipisci aliquid
+      repellat. Exercitationem veniam distinctio unde.
+    </p>
+    <form name="formulario">
+        <select name="pais" id="pais" onchange="MostrarCiudad()">
+            <option value="0">Selecciona un país</option>
+            <option value="1">Argentina</option>
+            <option value="2">Bolivia</option>
+            <option value="3">Colombia</option>
+            <option value="3">Dinamarca</option>
+        </select>
+        <select name="ciudades" id="ciudades">
+            <option value="-">-</option>
+        </select>
+    </form>
+    <script src="./proceso.js"></script>
+  </body>
+</html>

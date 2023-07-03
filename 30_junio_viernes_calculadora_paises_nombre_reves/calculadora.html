@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Ingrese el primer número" id="numero1">
+        <select name="operaciones" id="operaciones">
+            <option value="0">Sumar</option>
+            <option value="1">Restar</option>
+            <option value="2">Multiplicar</option>
+            <option value="3">Dividir</option>
+        </select>
+        <input type="text" placeholder="Ingrese el segundo número" id="numero2">
+        <button type="button" onclick="Calcular()">Calcular</button>
+    </form>
+    <p id="resultado"></p>
+    <script src="calculadora.js" ></script>
+</body>
+</html>
