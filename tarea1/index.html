@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <br>
+    <h1>Programacion web 1</h1>
+
+    <!-- Punto1 -->
+
+    <div class="punto__uno">
+        <br>
+        <h2>Triangulo</h2>
+
+
+            <!-- <form action="" class="punto__uno__form"> -->
+                <div class="punto__uno__ancho">
+                    <label for="">Escribe aqui el ancho</label>
+                    <input id="id__input__ancho" type="text" placeholder="Escriba aqui">
+                </div>
+
+                <br>
+                <div class="punto__uno__ancho">
+                    <label for="">Escribe aqui el alto</label>
+                    <input id="id__input__alto" type="text" placeholder="Escriba aqui">
+                </div>
+
+                <br>
+                <button onclick="area()" class="btn btn-primary">Calcular superficie</button>
+            <!-- </form> -->
+
+
+        <br>
+        <h1 id="id__input__response" class="punto__uno__response"></h1>
+        <br>
+    </div>
+    
+    <!-- Punto2 -->
+
+    <div class="punto__uno">
+        <br>
+        <h2>Velocidad</h2>
+
+
+            <!-- <form action="" class="punto__uno__form"> -->
+                <div class="punto__uno__ancho">
+                    <label for="">Escriba su velocidad en Km/hora</label>
+                    <input id="id__input__velocidad_km" type="text" placeholder="Escriba aqui" >
+                </div>
+
+                <br>
+                <button onclick="velocidad()" class="btn btn-primary">Calcular Velocidad</button>
+                <br>
+
+                <div class="">
+                    <label for="">Su velocidad en metros / hora es: </label>
+                    <p id="id__puntoDos__input__response1" class="punto__uno__response"></p>
+                </div>
+                <br>
+                
+                <div class="">
+                    <label for="">Su velocidad en millas / hora es: </label>
+                    <p id="id__puntoDos__input__response2" class="punto__uno__response"></p>
+                </div>
+                <br>
+            <!-- </form> -->
+
+
+
+    </div>
+
+
+    <!-- Punto3 -->
+
+    <div class="punto__uno">
+        <br>
+        <h2>Cambio de temperatura Celcius a Farengeith</h2>
+        <br>
+
+            <!-- <form action="" class="punto__uno__form"> -->
+                <div class="punto__uno__ancho">
+                    <label for="inputOriginal">Escriba la temperatura en grados Celcius:</label>
+                    <input type="text" id="inputOriginal" placeholder="Escriba aquí">
+                </div>
+
+                <br>
+                <div class="punto__uno__ancho">
+                    <label for="inputReflejo">Escriba la temperatura en grados Farengeith:</label>
+                    <input type="text" id="inputReflejo" placeholder="El texto se reflejará aquí" />
+                </div>
+
+                <br>
+                <button onclick="area()" class="btn btn-primary">Calcular superficie</button>
+            <!-- </form> -->
+
+
+        <br>
+        <h1 id="id__puntoTres__input__response" class="punto__uno__response"></h1>
+        <br>
+    </div>
+
+    <!-- Punto4 -->
+
+     <div class="punto__uno">
+        <br>
+        <h2>Índice de masa corporal</h2>
+        <br>
+
+            <!-- <form action="" class="punto__uno__form"> -->
+                <div class="punto__uno__ancho">
+                    <label for="">Escribe aqui tu estatura en metros</label>
+                    <input id="id__input__estatura" type="text" placeholder="Escriba aqui">
+                </div>
+
+                <br>
+                <div class="punto__uno__ancho">
+                    <label for="">Escribe aqui tu peso en Kg</label>
+                    <input id="id__input__peso" type="text" placeholder="Escriba aqui">
+                </div>
+
+                <br>
+                <button onclick="indiceMasaCorporal()" class="btn btn-primary">Calcular IMC</button>
+            <!-- </form> -->
+
+
+        <br>
+        <h1 id="id__puntoCuatro__input__response" class="punto__uno__response"></h1>
+        <br>
+    </div>
+
+    <!-- Punto5 -->
+    <div class="punto__uno">
+        <br>
+        <h2>Calculadora de días y semanas hasta fin de año</h2>
+        <br>
+
+            <!-- <form action="" class="punto__uno__form"> -->
+                <div class="punto__uno__ancho">
+                    <label for="fechaInput">Fecha actual:</label>
+                    <input type="date" id="fechaInput" required/>
+                </div>
+
+                <br>
+                <button class="btn btn-primary" onclick="calcularDiasYSemanasHastaFinDeAnio()">Calcular</button>
+                
+            <!-- </form> -->
+
+
+        <br>
+        <h1 id="id__input__response" class="punto__uno__response"></h1>
+        <p id="resultado" class="punto__uno__response" ></p>
+        <br>
+    </div>
+
+    <br><br><br>
+
+
+
+
+
+
+
+    <script >
+
+                
+
+
+        function area ()
+        {
+            
+            let punto__uno__ancho__JS = document.getElementById('id__input__ancho').value;
+            let punto__uno__alto__JS = document.getElementById("id__input__alto").value;
+
+            
+            
+            let superficie = parseFloat(punto__uno__ancho__JS) * parseFloat(punto__uno__alto__JS) ;
+            
+            let punto__uno__response__JS = document.getElementById('id__input__response').innerHTML = "La superficie del rectángulo es: " + superficie;
+            
+        }
+
+
+        function velocidad ()
+        {
+            
+            let punto__dos__velKM__JS = document.getElementById('id__input__velocidad_km').value;
+            
+            
+            let vel_metros = parseFloat(punto__dos__velKM__JS) * 1000 ;
+            let vel_millas = parseFloat(punto__dos__velKM__JS) * 0.621371 ;
+
+
+            let punto__dos__velMetros__JS = document.getElementById("id__puntoDos__input__response1").innerHTML = vel_metros + " metros/hora";
+
+            let punto__dos__velMillas__JS = document.getElementById("id__puntoDos__input__response2").innerHTML = vel_millas + "millas/hora";
+            
+
+            
+        }
+
+
+        // Obtener referencias a los inputs
+        var inputOriginal = document.getElementById('inputOriginal');
+        var inputReflejo = document.getElementById('inputReflejo');
+
+        // Agregar el evento 'input' al inputOriginal
+        inputOriginal.addEventListener('input', function() {
+            // Copiar el valor del inputOriginal al inputReflejo en tiempo real
+            var nuevoValor = parseFloat ((inputOriginal.value *(9/5))+32)
+            inputReflejo.value = nuevoValor;
+
+            if(inputOriginal.value<0)
+            {
+                let punto__dos__velMillas__JS = document.getElementById("id__puntoTres__input__response").innerHTML = "Nos congelamos";
+            }
+            else if(inputOriginal.value>5 && inputOriginal.value<15) 
+            {
+                let punto__dos__velMillas__JS = document.getElementById("id__puntoTres__input__response").innerHTML = "Esta haciendo frio";
+            }
+            else if(inputOriginal.value>16 && inputOriginal.value<25) 
+            {
+                let punto__dos__velMillas__JS = document.getElementById("id__puntoTres__input__response").innerHTML = "Está templado el día";
+            }
+            else if(inputOriginal.value>38) 
+            {
+                let punto__dos__velMillas__JS = document.getElementById("id__puntoTres__input__response").innerHTML = "Tiene fiebre o es el apocalipsis.";
+            }
+
+
+        });
+
+
+        function indiceMasaCorporal()
+        {
+            let punto__cuatro__estatura__JS = document.getElementById('id__input__estatura').value;
+            let punto__cuatro__peso__JS = document.getElementById("id__input__peso").value;
+
+            let IMC = parseFloat(punto__cuatro__peso__JS) / ( parseFloat(punto__cuatro__estatura__JS) * parseFloat(punto__cuatro__estatura__JS) ) ;
+
+            if(IMC<18.5)
+            {
+                let punto__uno__response__JS = document.getElementById('id__puntoCuatro__input__response').innerHTML = "Bajo peso debe ir al nutricionista ";
+            }
+            else if(IMC>18.5 && IMC<24.9) 
+            {
+                let punto__uno__response__JS = document.getElementById('id__puntoCuatro__input__response').innerHTML = "Normal ";
+            }
+            else if(IMC>25.0 && IMC<29.9) 
+            {
+                let punto__uno__response__JS = document.getElementById('id__puntoCuatro__input__response').innerHTML = "Sobrepeso ";
+            }
+            else if(IMC>30) 
+            {
+                let punto__uno__response__JS = document.getElementById('id__puntoCuatro__input__response').innerHTML = "Obeso debe ir al nutricionista";
+            }
+
+
+
+            // let punto__uno__response__JS = document.getElementById('id__puntoCuatro__input__response').innerHTML = "La superficie del rectángulo es: " + superficie;
+            
+
+        }
+
+        // QUINTO PUNTO
+
+        function calcularDiasYSemanasHastaFinDeAnio() {
+            // Obtener la fecha actual ingresada por el usuario
+            var fechaInput = document.getElementById("fechaInput").value;
+            var fechaActual = new Date(fechaInput);
+        
+            // Obtener el año actual
+            var añoActual = fechaActual.getFullYear();
+        
+            // Obtener la fecha de fin de año
+            var fechaFinDeAnio = new Date(añoActual, 11, 31); // 11 representa diciembre (los meses se indexan desde 0)
+        
+            // Calcular la diferencia en milisegundos entre la fecha actual y la fecha de fin de año
+            var diferenciaMilisegundos = fechaFinDeAnio - fechaActual;
+        
+            // Calcular el número de días y de semanas
+            var diasFaltantes = Math.floor(diferenciaMilisegundos / (1000 * 60 * 60 * 24));
+            var semanasFaltantes = Math.floor(diasFaltantes / 7);
+        
+            // Mostrar los resultados
+            var resultado = "Faltan " + diasFaltantes + " días y " + semanasFaltantes + " semanas para terminar el año.";
+            document.getElementById("resultado").textContent = resultado;
+        }
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
