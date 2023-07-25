@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- PARTE UNO ---- PARTE VISUAL -->
+    <!-- PARTE DOS ---- PONER ID A LAS ETIQUETAS QUE SE VAN A TRABAJAR -->
+    <div class="superior">
+        <h1 for="">Ingrese el número uno</h1>
+        <input id="input_1_jaime" type="text" placeholder="Ingrese el numero 1" >
+    </div>
+
+    <div class="inferior">
+        <h1 for="">Ingrese el número dos</h1>
+        <input type="text" placeholder="Ingrese el numero 2" id="input_2_jaime">
+    </div>
+
+    <div class="superior">
+        <button onclick="botonJaime()" >Mostrar la suma de los números</button>
+        
+        <!-- Despues de asignar el evento se acreara una funcion para crear un proceso mas elaborado -->
+        <p id="Id_Mostrar" ></p>
+
+    </div>
+
+
+
+
+<script>
+
+
+        function botonJaime (){
+            let n1 = parseInt(document.getElementById('input_1_jaime').value);
+            let n2 = parseInt(document.getElementById('input_2_jaime').value);
+
+            let a = document.getElementById('Id_Mostrar').innerHTML = n1 + n2 ;
+        }
+        
+        
+        
+
+
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

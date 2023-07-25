@@ -20,8 +20,14 @@ clasificaciones.splice(indiceCelia, 1); // Eliminar "Celia" del array
 clasificaciones.splice(indiceRaul, 0, "Celia"); // Insertar "Celia" antes de "Raúl"
 // console.log(clasificaciones);
 
-p_2_eje2 = document.getElementById("id_p_2_eje2").innerHTML= " - Segundo : Raul adelanta a Celia : " + clasificaciones;
-        //tercero
+p_2_eje2 = document.getElementById("id_p_2_eje2").innerHTML= " - Segundo : Raul adelanta a Celia mira Juan : " + clasificaciones;
+        
+
+
+
+
+
+//tercero
 clasificaciones.pop();
 
 p_3_eje2 = document.getElementById("id_p_3_eje2").innerHTML= "- Tercero : Antonio es descalificado y se elimina del concurso : " + clasificaciones;
@@ -39,6 +45,12 @@ p_5_eje2 = document.getElementById("id_p_5_eje2").innerHTML= "- Quinto : Hay una
 
 
 
+
+
+
+
+
+
 //EJERCICIO 3
 
 var frutas_y_verduras = ["Zanahoria","Banano","Manzana","Pera","Cebolla","papa","Fresas","Ajo","Sandia"];
@@ -50,7 +62,7 @@ var verduras = ["Zanahoria","Cebolla","papa","Ajo"]
 p_eje3 = document.getElementById("id_p_eje3").innerHTML= " - Primero : El array Frutas y verduras es : " + frutas_y_verduras;
 
         //Segundo
-function mostrarResultado(titulo, elementos, array) {
+function mostrarResultado(titulo, arrayFiltrado, array) {
     var resultadoElemento = document.createElement("ul");
     //document.body.appendChild(resultadoElemento);
     document.getElementById("id_divJaime").appendChild(resultadoElemento);
@@ -59,11 +71,16 @@ function mostrarResultado(titulo, elementos, array) {
     tituloElemento.textContent = titulo;
     resultadoElemento.appendChild(tituloElemento);
 
-    elementos.forEach(function(elemento) {
-    var indice = array.indexOf(elemento);
-    var elementoLi = document.createElement("li");
-    elementoLi.textContent = elemento + " - Posición: " + indice;
-    resultadoElemento.appendChild(elementoLi);
+    arrayFiltrado.forEach(function(variableIterable) 
+    {
+    
+        var indice = array.indexOf(variableIterable);
+    
+        var elementoLi = document.createElement("li");
+    
+        elementoLi.textContent = variableIterable + " - Posición: " + indice;
+    
+        resultadoElemento.appendChild(elementoLi);
     });
 }
 

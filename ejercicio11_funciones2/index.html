@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p 
+        id="id_p" ></p>
+
+    <p 
+        id="id_p2" ></p>
+
+    <p 
+        id="id_persona" ></p>
+
+    <script  >
+
+    parrafo = document.getElementById("id_p");
+
+    parrafo2 = document.getElementById("id_p2");
+
+    parrafo3 = document.getElementById("id_persona");
+
+    const marca = [ "Mazda","Toyota","kawasaky" ]
+
+    parrafo.innerHTML = marca[1]
+
+    //otro Array
+    const frutas = [];
+
+    frutas[0]="Fresa";
+    frutas[1]="Mnagos";
+
+    parrafo2.innerHTML = frutas[1];
+
+    // Objeto
+    const persona = ["Juan","Lopez",32];
+
+    const persona1 = {nombre:"Ana", apellido:"Orozco",edad: 13 };
+
+    //Asignarle los indices dentro de un objeto 
+    parrafo3.innerHTML=persona1.nombre;
+
+
+
+
+
+    //1 Ejemplo lenght
+    const animales = ["Perro","Gato","Conejo","Leon"]
+
+    console.log( `los elementos son : ${animales.length}` );
+
+    //2 Ejemplo toSstring()
+    const paises = ["Colombia","Canada","Europa","Peru","Libia"];
+
+    console.log(`Este es un to string separado con comas: ${paises.toString()}`);
+
+    //3 Ejemplo join()
+    console.log(`Este es un join separado con lo que quiera: ${paises.join(" =xd= ")}`);
+
+
+    //4 pop() elimina el ultimo valor
+    const colores = ["Red","Amarillo","Cafe","Azul","Morado"];
+
+    colores.pop()
+    console.log(`Este es un pop() omitiendo: ${colores}`);
+
+    //5 push agrega un elemento al final del arreglo
+    const nombres = ["Juan","Andres","Pedro","Manuel"];
+
+    nombres.push("Morales");
+    console.log(nombres);
+
+    //6 shift agrega un elemento al final del arreglo
+    const nombres2 = ["Juan","Andres","Pedro","Manuel"];
+
+    nombres2.shift();
+    console.log( `Con el método shift(elimina el primer elemento): ${nombres2}` );
+
+
+    //7 unshift agrega un elemento al inicio
+    const nombres3 = ["Juan","Andres","Pedro","Manuel"];
+
+    nombres3.unshift(1);
+    console.log(`Con el metodo unshift(Agregar un elemento al inicio): ${nombres3}`);
+
+    //8 unshift agrega un elemento con posición, tambien permite definir si quiero eliminar alguno
+    const nombres4 = ["Juan","Andres","Pedro","Manuel"];
+
+    nombres4.splice(2,0,"blanco");// 2 significa la posición,
+    console.log( `Con el metodo splice:  ${nombres4}`);
+
+    //9 este metodo corta una parte del arreglo
+    const nombres5 = ["Juan","Andres","Pedro","Manuel"];
+
+    console.log(`Con el metodo slice(corta una parte del arreglo): ${nombres5.slice(0,2) }`);
+
+    </script>
+</body>
+</html>

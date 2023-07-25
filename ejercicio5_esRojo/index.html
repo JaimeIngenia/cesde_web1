@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <form action="">
+        <h1>presupuesto de computador</h1>
+
+        <p>Como se dice rojo en ingles?</p>
+        <select name="select" id="idEtiqueta1">
+            <option value="yellow"selected>yellow</option>
+            <option value="blue" >blue</option>
+            <option value="red">red</option>
+          </select>
+
+          <button onclick="sumar()">calcular presupuesto</button>
+          
+          <script>
+            function sumar()
+            {
+
+                //Conectarme con el mundo de HTML
+
+                let jaimevariable = document.getElementById('idEtiqueta1').value;
+                //let melivariable = document.getElementById('idEtiqueta2').value;
+
+
+                if(jaimevariable=='red'){
+                    alert('Es correcto, rojo en inglés es red');
+                }
+                else{
+                    alert('Incorrecto!!!');
+                }
+                
+            }
+          </script>
+
+
+
+    </form>
+
+
+
+</body>
+</html>

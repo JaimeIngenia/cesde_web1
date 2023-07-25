@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+*{
+    color: rgb(68, 64, 64);
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+.titulo h3{
+    font-family: 'VT323', monospace;
+}
+
+.box__general{
+    border: dotted blueviolet 5px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box__general h1,h3{
+    font-family: 'VT323', monospace;
+}
+
+.respuesta1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(5, 5, 96);
+}
+
+.respuesta1 h1{
+    color: rgb(5, 5, 96);
+}

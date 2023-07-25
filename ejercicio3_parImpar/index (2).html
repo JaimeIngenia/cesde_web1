@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- PARTE UNO ---- PARTE VISUAL -->
+    <!-- PARTE DOS ---- PONER ID A LAS ETIQUETAS QUE SE VAN A TRABAJAR -->
+    <div class="superior">
+        <h1 for="">Ingrese el numero a identificar</h1>
+        <input type="text" placeholder="Ingrese el numero 1" id="input_1_jaime">
+    </div>
+
+    <div class="superior">
+        <button onclick="botonJaime()" >Ver si es par o impar</button>
+        <!-- Despues de asignar el evento se acreara una funcion para crear un proceso mas elaborado -->
+
+    </div>
+
+    <div class="inferior">
+        <p id="Id_Mostrar" > Este es par o impar?</p>
+    </div>
+
+<script>
+
+        function botonJaime (){
+            let n1 = parseFloat( document.getElementById('input_1_jaime').value);
+
+            let a = document.getElementById('Id_Mostrar');
+
+            if(n1%2 == 0){
+
+                a.innerHTML = "Es par";
+                
+            }
+            else
+            {
+                a.innerHTML = "Es impar";
+            }
+
+        }
+        
+        
+        
+
+
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

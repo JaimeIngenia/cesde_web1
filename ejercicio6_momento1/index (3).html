@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <br>
+    <h1>Programacion web 1</h1>
+
+    <!-- Punto1 -->
+
+    <div class="punto__uno">
+        <br>
+        <h2>Triangulo</h2>
+
+
+            <!-- <form action="" class="punto__uno__form"> -->
+                <div class="punto__uno__ancho">
+                    <label for="">Escribe aqui el ancho</label>
+                    <input id="id__input__ancho" type="text" placeholder="Escriba aqui">
+                </div>
+
+                <br>
+                <div class="punto__uno__ancho">
+                    <label for="">Escribe aqui el alto</label>
+                    <input id="id__input__alto" type="text" placeholder="Escriba aqui">
+                </div>
+
+                <br>
+                <button onclick="area()" class="btn btn-primary">Calcular superficie</button>
+            <!-- </form> -->
+
+
+        <br>
+        <h1 id="id__input__response" class="punto__uno__response"></h1>
+        <br>
+    </div>
+    
+    <!-- Punto2 -->
+
+    <div class="punto__uno">
+        <br>
+        <h2>Velocidad</h2>
+
+
+            <!-- <form action="" class="punto__uno__form"> -->
+                <div class="punto__uno__ancho">
+                    <label for="">Escriba su velocidad en Km/hora</label>
+                    <input id="id__input__velocidad_km" type="text" placeholder="Escriba aqui" >
+                </div>
+
+                <br>
+                <button onclick="velocidad()" class="btn btn-primary">Calcular Velocidad</button>
+                <br>
+
+                <div class="">
+                    <label for="">Su velocidad en metros / hora es: </label>
+                    <p id="id__puntoDos__input__response1" class="punto__uno__response"></p>
+                </div>
+                <br>
+                
+                <div class="">
+                    <label for="">Su velocidad en millas / hora es: </label>
+                    <p id="id__puntoDos__input__response2" class="punto__uno__response"></p>
+                </div>
+                <br>
+            <!-- </form> -->
+
+
+
+    </div>
+
+
+    <!-- Punto3 -->
+
+    <div class="punto__uno">
+        <br>
+        <h2>Cambio de temperatura Celcius a Farengeith</h2>
+        <br>
+
+            <!-- <form action="" class="punto__uno__form"> -->
+                <div class="punto__uno__ancho">
+                    <label for="inputOriginal">Escriba la temperatura en grados Celcius:</label>
+                    <input type="text" id="inputOriginal" placeholder="Escriba aquí">
+                </div>
+
+                <br>
+                <div class="punto__uno__ancho">
+                    <label for="inputReflejo">Escriba la temperatura en grados Farengeith:</label>
+                    <input type="text" id="inputReflejo" placeholder="El texto se reflejará aquí" />
+                </div>
+
+                <br>
+                <!-- <button onclick="area()" class="btn btn-primary">Calcular superficie</button> -->
+            <!-- </form> -->
+
+
+        <br>
+        <h1 id="id__puntoTres__input__response" class="punto__uno__response"></h1>
+        <br>
+    </div>
+
+
+    <script src="./app.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

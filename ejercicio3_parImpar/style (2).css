@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.superior{
+    border: solid red 3px;
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inferior{
+    border: solid rgb(81, 0, 255) 3px;
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

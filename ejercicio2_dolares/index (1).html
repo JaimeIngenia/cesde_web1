@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- PARTE UNO ---- PARTE VISUAL -->
+    <!-- PARTE DOS ---- PONER ID A LAS ETIQUETAS QUE SE VAN A TRABAJAR -->
+    <div class="superior">
+        <h1 for="">Ingrese el dinero en dolares</h1>
+        <input type="text" placeholder="Ingrese el numero 1" id="input_1_jaime">
+    </div>
+
+
+
+    <div class="superior">
+        <button onclick="botonJaime()" >Mostrar el dinero en pesos colombianos</button>
+        
+        <!-- Despues de asignar el evento se acreara una funcion para crear un proceso mas elaborado -->
+        
+
+    </div>
+
+    <div class="inferior">
+        <p id="Id_Mostrar" >Este es el valor en pesos Colombianos</p>
+    </div>
+
+
+<script>
+
+
+        function botonJaime (){
+            let n1 = parseFloat( document.getElementById('input_1_jaime').value);
+            
+
+            let a = document.getElementById('Id_Mostrar').innerHTML = n1 * 4175.18 ;
+        }
+        
+        
+        
+
+
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

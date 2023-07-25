@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: solid red 3px; */
+}
+
+.punto__uno{
+
+    width: 50%;
+    border: dotted  rgb(83, 84, 87) 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.punto__uno__form{
+    width: 100%;
+    /* border: solid  rgb(83, 84, 87) 3px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.punto__uno h2{
+    font-family: 'Kablammo', cursive;
+}
+.punto__uno__ancho{
+    width: 100%;
+    /* border: solid rgb(0, 255, 76) 3px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.punto__uno__response{
+    /* display: none; */
+    font-family: 'Kablammo', cursive;
+    margin: auto;
+    /* border: solid  rgb(83, 84, 87) 3px; */
+    text-align: center;
+}
